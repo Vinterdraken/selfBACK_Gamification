@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Models_2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_routeList">RouteList</string>
+
+    <!-- DEMO MAP ACTIVITY -->
+    <string name="default_text_percentTextView"> 0% </string>
+    <string name="default_text_distanceTextView"> 0 m</string>
+    <string name="default_text_stepsTextView"> 0 steps</string>
+
+    <string name="content_description_of_list_item_img">Arrow to the right</string>
+    <string name="update_button_text">Update</string>
+    <string name="back_button">Back to the list</string>
+
+</resources>

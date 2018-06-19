@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'android-gpx-parser'
+
+    publishedGroupId = 'io.ticofab.androidgpxparser'
+    libraryName = 'AndroidGpxParser'
+    artifact = 'parser'
+
+    libraryDescription = 'A simple XML parser for GPX files, built for Android.'
+
+    siteUrl = 'https://github.com/ticofab/android-gpx-parser'
+    gitUrl = 'https://github.com/ticofab/android-gpx-parser.git'
+
+    libraryVersion = '1.1.1'
+
+    developerId = 'ticofab'
+    developerName = 'Fabio Tiriticco'
+    developerEmail = 'fabio.europe@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 5
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // JodaTime for Android
+    // https://github.com/dlew/joda-time-android
+    implementation 'net.danlew:android.joda:2.9.9.2'
+
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support:support-annotations:27.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
+tasks.findByPath(":parser:javadoc").enabled = false

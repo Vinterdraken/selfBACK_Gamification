@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<gpx
+ version="1.1"
+ creator="GPScoordinaten.nl - https://www.gpscoordinaten.nl"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>alta via 1(cicerone guide)</name>
+<number>1</number>
+<rtept lat="46.69858" lon="12.08766">
+<ele>1497.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP1</name>
+<desc>RTP1</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.68525" lon="12.08697">
+<ele>1581.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP2</name>
+<desc>RTP2</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.67842" lon="12.09268">
+<ele>1825.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP3</name>
+<desc>RTP3</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.67580" lon="12.09388">
+<ele>1975.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP4</name>
+<desc>RTP4</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.67606" lon="12.09204">
+<ele>1977.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP5</name>
+<desc>RTP5</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.66929" lon="12.09384">
+<ele>2191.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP6</name>
+<desc>RTP6</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.66752" lon="12.08328">
+<ele>2371.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP7</name>
+<desc>RTP7</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.66561" lon="12.08487">
+<ele>2336.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP8</name>
+<desc>RTP8</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.66460" lon="12.07363">
+<ele>2263.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP9</name>
+<desc>RTP9</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.65771" lon="12.05814">
+<ele>2224.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP10</name>
+<desc>RTP10</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.65382" lon="12.05985">
+<ele>2141.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP11</name>
+<desc>RTP11</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.65014" lon="12.06217">
+<ele>2120.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP12</name>
+<desc>RTP12</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.64569" lon="12.06015">
+<ele>2090.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP13</name>
+<desc>RTP13</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.64071" lon="12.05500">
+<ele>2017.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP14</name>
+<desc>RTP14</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.63839" lon="12.05217">
+<ele>1887.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP15</name>
+<desc>RTP15</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.63786" lon="12.04200">
+<ele>1561.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP16</name>
+<desc>RTP16</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.62837" lon="12.04024">
+<ele>1751.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP17</name>
+<desc>RTP17</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.61472" lon="12.01295">
+<ele>2026.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP18</name>
+<desc>RTP18</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.61139" lon="12.00707">
+<ele>2050.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP19</name>
+<desc>RTP19</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.61124" lon="12.01445">
+<ele>2090.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP20</name>
+<desc>RTP20</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.60322" lon="12.02063">
+<ele>2162.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP21</name>
+<desc>RTP21</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.59738" lon="12.02234">
+<ele>2101.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP22</name>
+<desc>RTP22</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.58515" lon="12.00767">
+<ele>2159.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP23</name>
+<desc>RTP23</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.57612" lon="12.00539">
+<ele>2125.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP24</name>
+<desc>RTP24</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.56957" lon="12.00908">
+<ele>2274.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP25</name>
+<desc>RTP25</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.56131" lon="12.00578">
+<ele>2335.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP26</name>
+<desc>RTP26</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.55426" lon="12.00509">
+<ele>2317.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP27</name>
+<desc>RTP27</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.55039" lon="12.00565">
+<ele>2189.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP28</name>
+<desc>RTP28</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.54891" lon="12.00664">
+<ele>2224.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP29</name>
+<desc>RTP29</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53967" lon="12.01033">
+<ele>2431.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP30</name>
+<desc>RTP30</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53746" lon="12.01247">
+<ele>2480.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP31</name>
+<desc>RTP31</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53144" lon="12.01063">
+<ele>2557.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP32</name>
+<desc>RTP32</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53049" lon="12.01312">
+<ele>2568.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP33</name>
+<desc>RTP33</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.52763" lon="12.00883">
+<ele>2702.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP34</name>
+<desc>RTP34</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53038" lon="12.01325">
+<ele>2567.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP35</name>
+<desc>RTP35</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53153" lon="12.01977">
+<ele>2504.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP36</name>
+<desc>RTP36</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53088" lon="12.01990">
+<ele>2500.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP37</name>
+<desc>RTP37</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53430" lon="12.02878">
+<ele>2394.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP38</name>
+<desc>RTP38</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53386" lon="12.03513">
+<ele>2333.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP39</name>
+<desc>RTP39</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53150" lon="12.03749">
+<ele>2291.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP40</name>
+<desc>RTP40</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53241" lon="12.05204">
+<ele>2344.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP41</name>
+<desc>RTP41</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53501" lon="12.05784">
+<ele>2306.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP42</name>
+<desc>RTP42</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53392" lon="12.06569">
+<ele>2099.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP43</name>
+<desc>RTP43</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.53221" lon="12.06972">
+<ele>2037.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP44</name>
+<desc>RTP44</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.52243" lon="12.06680">
+<ele>1726.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP45</name>
+<desc>RTP45</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.50849" lon="12.06303">
+<ele>2021.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP46</name>
+<desc>RTP46</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.50832" lon="12.05466">
+<ele>2129.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP47</name>
+<desc>RTP47</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.50734" lon="12.04771">
+<ele>2228.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP48</name>
+<desc>RTP48</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.50578" lon="12.04548">
+<ele>2280.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP49</name>
+<desc>RTP49</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.49922" lon="12.04277">
+<ele>2436.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP50</name>
+<desc>RTP50</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.49499" lon="12.04565">
+<ele>2516.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP51</name>
+<desc>RTP51</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.49358" lon="12.04921">
+<ele>2480.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP52</name>
+<desc>RTP52</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.49434" lon="12.05239">
+<ele>2407.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP53</name>
+<desc>RTP53</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.49384" lon="12.05702">
+<ele>2201.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP54</name>
+<desc>RTP54</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.48548" lon="12.05333">
+<ele>2235.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP55</name>
+<desc>RTP55</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.48252" lon="12.05363">
+<ele>2230.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP56</name>
+<desc>RTP56</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.48161" lon="12.05754">
+<ele>2208.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP57</name>
+<desc>RTP57</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.47650" lon="12.06208">
+<ele>2241.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP58</name>
+<desc>RTP58</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.47608" lon="12.07157">
+<ele>2201.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP59</name>
+<desc>RTP59</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.46890" lon="12.09118">
+<ele>2219.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP60</name>
+<desc>RTP60</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.46896" lon="12.10603">
+<ele>2250.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP61</name>
+<desc>RTP61</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.46881" lon="12.10779">
+<ele>2270.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP62</name>
+<desc>RTP62</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.46314" lon="12.11118">
+<ele>2292.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP63</name>
+<desc>RTP63</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.45583" lon="12.12144">
+<ele>2073.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP64</name>
+<desc>RTP64</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.45202" lon="12.12354">
+<ele>2052.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP65</name>
+<desc>RTP65</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.44306" lon="12.12577">
+<ele>2048.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP66</name>
+<desc>RTP66</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.43638" lon="12.12328">
+<ele>1911.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP67</name>
+<desc>RTP67</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.43091" lon="12.12410">
+<ele>1819.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP68</name>
+<desc>RTP68</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.42632" lon="12.12032">
+<ele>1807.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP69</name>
+<desc>RTP69</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.42108" lon="12.10873">
+<ele>1813.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP70</name>
+<desc>RTP70</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.42082" lon="12.10504">
+<ele>1776.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP71</name>
+<desc>RTP71</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.41838" lon="12.09489">
+<ele>1699.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP72</name>
+<desc>RTP72</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.42018" lon="12.08545">
+<ele>1717.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP73</name>
+<desc>RTP73</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.42095" lon="12.08202">
+<ele>1715.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP74</name>
+<desc>RTP74</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.41932" lon="12.07503">
+<ele>1722.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP75</name>
+<desc>RTP75</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.41697" lon="12.07115">
+<ele>1875.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP76</name>
+<desc>RTP76</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.41429" lon="12.07269">
+<ele>1894.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP77</name>
+<desc>RTP77</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.41337" lon="12.07402">
+<ele>1885.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP78</name>
+<desc>RTP78</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.40848" lon="12.07557">
+<ele>1825.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP79</name>
+<desc>RTP79</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.40717" lon="12.07518">
+<ele>1822.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP80</name>
+<desc>RTP80</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.40578" lon="12.07398">
+<ele>1857.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP81</name>
+<desc>RTP81</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.39933" lon="12.06862">
+<ele>2120.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP82</name>
+<desc>RTP82</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.39983" lon="12.06162">
+<ele>2150.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP83</name>
+<desc>RTP83</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.39371" lon="12.05677">
+<ele>2194.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP84</name>
+<desc>RTP84</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.38755" lon="12.04853">
+<ele>1994.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP85</name>
+<desc>RTP85</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.38441" lon="12.03896">
+<ele>2080.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP86</name>
+<desc>RTP86</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.38228" lon="12.03540">
+<ele>2113.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP87</name>
+<desc>RTP87</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.37894" lon="12.02360">
+<ele>1958.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP88</name>
+<desc>RTP88</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.36724" lon="12.01596">
+<ele>1962.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP89</name>
+<desc>RTP89</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35984" lon="12.01720">
+<ele>1872.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP90</name>
+<desc>RTP90</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35738" lon="12.01995">
+<ele>1807.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP91</name>
+<desc>RTP91</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35415" lon="12.03115">
+<ele>1709.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP92</name>
+<desc>RTP92</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35717" lon="12.03222">
+<ele>1689.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP93</name>
+<desc>RTP93</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35640" lon="12.03832">
+<ele>1621.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP94</name>
+<desc>RTP94</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.35219" lon="12.04334">
+<ele>1429.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP95</name>
+<desc>RTP95</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.34609" lon="12.04184">
+<ele>1452.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP96</name>
+<desc>RTP96</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.33448" lon="12.04162">
+<ele>1754.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP97</name>
+<desc>RTP97</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.33146" lon="12.04596">
+<ele>1868.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP98</name>
+<desc>RTP98</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32387" lon="12.04793">
+<ele>1917.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP99</name>
+<desc>RTP99</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32686" lon="12.05029">
+<ele>1848.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP100</name>
+<desc>RTP100</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32820" lon="12.05518">
+<ele>1809.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP101</name>
+<desc>RTP101</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32485" lon="12.06192">
+<ele>1790.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP102</name>
+<desc>RTP102</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32402" lon="12.06857">
+<ele>1839.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP103</name>
+<desc>RTP103</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32168" lon="12.07046">
+<ele>1818.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP104</name>
+<desc>RTP104</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32218" lon="12.08063">
+<ele>1753.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP105</name>
+<desc>RTP105</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32520" lon="12.08896">
+<ele>1727.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP106</name>
+<desc>RTP106</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.32402" lon="12.09518">
+<ele>1609.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP107</name>
+<desc>RTP107</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.31815" lon="12.09282">
+<ele>1548.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP108</name>
+<desc>RTP108</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.31465" lon="12.09698">
+<ele>1526.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP109</name>
+<desc>RTP109</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.31258" lon="12.10016">
+<ele>1517.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP110</name>
+<desc>RTP110</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.30795" lon="12.09703">
+<ele>1607.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP111</name>
+<desc>RTP111</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.30514" lon="12.10025">
+<ele>1608.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP112</name>
+<desc>RTP112</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.30279" lon="12.10737">
+<ele>1665.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP113</name>
+<desc>RTP113</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.30155" lon="12.11269">
+<ele>1657.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP114</name>
+<desc>RTP114</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.29680" lon="12.12102">
+<ele>1692.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP115</name>
+<desc>RTP115</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28637" lon="12.12522">
+<ele>1809.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP116</name>
+<desc>RTP116</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28648" lon="12.13758">
+<ele>1945.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP117</name>
+<desc>RTP117</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28678" lon="12.14162">
+<ele>1971.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP118</name>
+<desc>RTP118</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28838" lon="12.15028">
+<ele>1879.6</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP119</name>
+<desc>RTP119</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28892" lon="12.16342">
+<ele>1859.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP120</name>
+<desc>RTP120</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28820" lon="12.15844">
+<ele>1877.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP121</name>
+<desc>RTP121</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28482" lon="12.15552">
+<ele>1947.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP122</name>
+<desc>RTP122</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.28085" lon="12.15234">
+<ele>2078.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP123</name>
+<desc>RTP123</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.27355" lon="12.15380">
+<ele>2318.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP124</name>
+<desc>RTP124</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.27302" lon="12.15895">
+<ele>2349.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP125</name>
+<desc>RTP125</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26958" lon="12.15921">
+<ele>2221.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP126</name>
+<desc>RTP126</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26631" lon="12.16642">
+<ele>2081.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP127</name>
+<desc>RTP127</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26715" lon="12.17106">
+<ele>2021.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP128</name>
+<desc>RTP128</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26513" lon="12.17133">
+<ele>1893.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP129</name>
+<desc>RTP129</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26272" lon="12.17533">
+<ele>1692.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP130</name>
+<desc>RTP130</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.26109" lon="12.17563">
+<ele>1607.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP131</name>
+<desc>RTP131</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.25810" lon="12.17567">
+<ele>1414.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP132</name>
+<desc>RTP132</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.25783" lon="12.17069">
+<ele>1531.8</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP133</name>
+<desc>RTP133</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.25551" lon="12.17121">
+<ele>1675.9</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP134</name>
+<desc>RTP134</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24860" lon="12.18142">
+<ele>1714.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP135</name>
+<desc>RTP135</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24661" lon="12.17970">
+<ele>1594.2</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP136</name>
+<desc>RTP136</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24590" lon="12.17777">
+<ele>1469.1</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP137</name>
+<desc>RTP137</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24525" lon="12.16696">
+<ele>1305.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP138</name>
+<desc>RTP138</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24347" lon="12.16134">
+<ele>1241.0</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP139</name>
+<desc>RTP139</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.24341" lon="12.13752">
+<ele>1138.7</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP140</name>
+<desc>RTP140</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.23091" lon="12.12278">
+<ele>639.3</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP141</name>
+<desc>RTP141</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.22895" lon="12.11956">
+<ele>650.5</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP142</name>
+<desc>RTP142</desc>
+<sym>Dot</sym>
+</rtept>
+<rtept lat="46.22726" lon="12.11702">
+<ele>488.4</ele>
+<time>2018-05-15T12:17:03Z</time>
+<name>RTP143</name>
+<desc>RTP143</desc>
+<sym>Dot</sym>
+</rtept>
+</rte>
+</gpx>

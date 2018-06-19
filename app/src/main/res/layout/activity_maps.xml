@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MapsActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="300dp"
+
+        android:contentDescription="@string/back_button"
+
+        android:background="@drawable/back"
+    />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="450dp"
+
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <EditText
+            android:id="@+id/editStepAmount"
+
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+
+            android:layout_marginTop="12.5dp"
+            android:layout_marginStart="12.5dp"
+
+            android:inputType="number"
+
+            android:background="@color/colorPrimary"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+        />
+
+        <Button
+            android:id="@+id/confirmStepAmount"
+
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="12.5dp"
+            android:layout_marginStart="256.5dp"
+
+            android:background="@color/colorAccent"
+
+            android:text="@string/update_button_text"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+        />
+
+
+        <TextView
+            android:id="@+id/textRouteTotalLength"
+
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="67.5dp"
+            android:layout_marginStart="12.5dp"
+
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+        />
+
+        <TextView
+            android:id="@+id/textRouteTotalSteps"
+
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="87.5dp"
+            android:layout_marginStart="12.5dp"
+
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+        />
+
+        <TextView
+            android:id="@+id/textPercent"
+
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="47.5dp"
+            android:layout_marginStart="140dp"
+
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+            android:textAlignment="center"
+
+            android:textSize="30sp"
+        />
+
+        <TextView
+            android:id="@+id/textDistance"
+
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="67.5dp"
+            android:layout_marginStart="244.5dp"
+
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+            android:textAlignment="textEnd"
+        />
+
+        <TextView
+            android:id="@+id/textSteps"
+
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="87.5dp"
+            android:layout_marginStart="246.5dp"
+
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+            android:textAlignment="textEnd"
+        />
+    </RelativeLayout>
+
+
+</fragment>

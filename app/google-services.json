@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1083521539431",
+    "firebase_url": "https://rgu-work-placement.firebaseio.com",
+    "project_id": "rgu-work-placement",
+    "storage_bucket": "rgu-work-placement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083521539431:android:deb404677f3d8058",
+        "android_client_info": {
+          "package_name": "com.example.a1715232.models_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083521539431-ote7hs455aa7vic5as3ic5447fb660dl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a1715232.models_2",
+            "certificate_hash": "4394b4e521b46650d537befdb41ac4d36586557e"
+          }
+        },
+        {
+          "client_id": "1083521539431-22a8g6pjdbec94fllbevqkeed1mj97qk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1083521539431-22a8g6pjdbec94fllbevqkeed1mj97qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-_F5gQpmePtFQI4eiRe0eiMN-mG3rFhM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083521539431-22a8g6pjdbec94fllbevqkeed1mj97qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
