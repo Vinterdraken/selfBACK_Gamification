@@ -30,9 +30,7 @@ public class Route {
      * Update the amount of step of the user and set the new position of the user
      * @param newStepsAmount is the new amount of steps done by the user
      */
-    public void update(int newStepsAmount){
-
-        User.setStepsDone(newStepsAmount, index);
+    public void update(){
 
         double distanceLeft = totalLengthOfTheRoute() - User.distanceDone(index);
 
@@ -58,6 +56,10 @@ public class Route {
 
     }
 
+    /**
+     * Calculate the total length in meters of the route
+     * Using distanceBetween2Markers()
+     */
     public double totalLengthOfTheRoute(){
         double totalDistance = 0;
 
@@ -67,6 +69,11 @@ public class Route {
 
         return totalDistance;
     }
+
+    /**
+     * Calculate the distance in meters from the start to a given wayPoint of the route
+     * @param indexOfLastPointIncluded is the given wayPoint of the route
+     */
     private double distanceOfASpecificPortionOfTheRoute(int indexOfLastPointIncluded){
         double distance = 0;
 
@@ -76,6 +83,10 @@ public class Route {
 
         return distance;
     }
+
+    /**
+     * Calculate the distance between 2 points without taking  in count mountains, seas, etc...
+     */
     private double distanceBetween2Markers(LatLng point1, LatLng point2){
 
         double Lat1 = Math.toRadians(point1.latitude);

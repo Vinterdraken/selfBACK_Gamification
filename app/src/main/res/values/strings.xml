@@ -8,8 +8,14 @@
     <string name="default_text_distanceTextView"> 0 m</string>
     <string name="default_text_stepsTextView"> 0 steps</string>
 
-    <string name="content_description_of_list_item_img">Arrow to the right</string>
-    <string name="update_button_text">Update</string>
-    <string name="back_button">Back to the list</string>
+    <!-- List Activity components -->
+    <string name="icon_list_description">Arrow to the right, it\'s a design component</string>
 
+    <!-- Map Activity components -->
+    <string name="back_button">Back to the list</string>
+    <string name="textPercent_when_route_complete">100%</string>
+    <string name="hint_for_edit_text">Steps</string>
+    <string name="update_button_text">Update</string>
+    <string name="text_increase_step_amount_button">+</string>
+    <string name="text_decrease_step_amount_button">-</string>
 </resources>

@@ -1,10 +1,14 @@
 package com.example.a1715232.models_2.activities;
 
 import android.app.ListActivity;
+
 import android.content.Intent;
 import android.content.res.AssetManager;
+
 import android.os.Bundle;
+
 import android.view.View;
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -13,6 +17,7 @@ import com.example.a1715232.models_2.R;
 import com.example.a1715232.models_2.models.User;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -29,6 +34,18 @@ public class RoutesListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_list);
 
+        getGpxList();
+
+        checkIfUserIsInit();
+
+        displayRoutesList();
+    }
+
+    /**
+     * Get all the name of the GPX File which are in the assets/gpx folder
+     */
+    private void getGpxList(){
+
         routeList = new ArrayList<>();
 
         try {
@@ -41,13 +58,12 @@ public class RoutesListActivity extends ListActivity {
         catch (IOException ignored){
 
         }
-
-        if(doUsersDataNeedToBeInitiate())
-            User.init(180, routeList.size());
-
-        displayRoutesList();
     }
 
+    private void checkIfUserIsInit(){
+        if(doUsersDataNeedToBeInitiate())
+            User.init(180, routeList.size());
+    }
     private boolean doUsersDataNeedToBeInitiate(){ return User.getStepsDone() == null; }
 
     private void displayRoutesList(){
@@ -57,16 +73,13 @@ public class RoutesListActivity extends ListActivity {
         ArrayList<String> routeNames = new ArrayList<>();
 
         for(int i = 0; i < routeList.size(); ++i){
-
                 String routeName = routeList.get(i).substring(0, routeList.get(i).length() - 4);
                 routeNames.add(routeName);
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_list_item, R.id.routeNameInList, routeNames);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_list_item, R.id.itemRouteName, routeNames);
 
         listView.setAdapter(adapter);
-
-
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -74,7 +87,6 @@ public class RoutesListActivity extends ListActivity {
                 goToMapActivity((int) id);
             }
         });
-
     }
 
     public void goToMapActivity(int index){
@@ -85,5 +97,6 @@ public class RoutesListActivity extends ListActivity {
 
         startActivity(intent);
     }
+
 
 }

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:id="@+id/routeList"
+    android:id="@+id/activity_route_list"
 
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -15,8 +15,8 @@
         android:id="@android:id/list"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </ListView>
+        android:layout_height="wrap_content"
+    />
 
 </LinearLayout>
+

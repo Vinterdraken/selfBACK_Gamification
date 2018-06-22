@@ -32,7 +32,6 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
-
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -89,16 +88,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(route.getWayPoints().get(0), 10));
 
         displayRouteAndUser();
-
-        graphicalProblemHandler();
 
         showRouteCompleteDialogIfRouteIsComplete();
     }
 
     // INITIALIZATION //
+
+    /**
+     * Get the information given by the previous activity
+     */
     private void getExtras(){
         Bundle extra = getIntent().getExtras();
 
@@ -116,6 +116,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+    /**
+     * As there is 3 different way to structure a GPX file
+     * This function will try to parse the file using three different methods
+     */
     private void setRouteDependingOnGPXStructure(){
         //Parsing for TrackPoint
         route = new Route(GPXController.getTrackPointsFromGPX(this, gpxFileName), routeIndex);
@@ -131,20 +135,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void setActivityComponent() {
+
         textPercent = findViewById(R.id.textPercent);
         textDistance = findViewById(R.id.textDistance);
         textSteps = findViewById(R.id.textSteps);
 
+        TextView textSelectedRouteName = findViewById(R.id.textSelectedRouteName);
+        textSelectedRouteName.setText(
+                gpxFileName.substring(0,gpxFileName.length() - 4)
+        );
+
         TextView routeLength = findViewById(R.id.textRouteTotalLength);
-        routeLength.setText(Integer.toString((int)route.totalLengthOfTheRoute()) + " m");
+        routeLength.setText(
+                String.format(
+                        "%s m",
+                        Integer.toString((int) route.totalLengthOfTheRoute())
+                )
+        );
 
         TextView routeSteps = findViewById(R.id.textRouteTotalSteps);
         routeSteps.setText(
-                Integer.toString(User.distanceToStep(route.totalLengthOfTheRoute())) + " steps");
+                String.format(
+                        "%s steps",
+                        Integer.toString(
+                                User.distanceToStep(route.totalLengthOfTheRoute())
+                        )
+                )
+        );
 
-        editText = findViewById(R.id.editStepAmount);
+        // new steps done amount
+        editText = findViewById(R.id.editNewStepAmount);
 
-        Button confirmButton = findViewById(R.id.confirmStepAmount);
+        // Confirm (change of steps done amount) Button
+        Button confirmButton = findViewById(R.id.confirmNewStepAmount);
         confirmButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -154,12 +177,35 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
         );
 
+        //Increase Button
+        Button increaseButton = findViewById(R.id.increaseStepAmountButton);
+        increaseButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        updateActivityByIncreaseButton();
+                    }
+        });
+
+        //Decrease Button
+        Button decreaseButton = findViewById(R.id.decreaseStepAmountButton);
+        decreaseButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        updateActivityByDecreaseButton();
+                    }
+                }
+        );
+
+        // Back to the list button (right hand up corner)
         ImageButton imageButton = findViewById(R.id.back);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goBackToListActivity();
-            }
+        imageButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        goBackToListActivity();
+                    }
         });
     }
     private void setTextViewsValues(){
@@ -170,14 +216,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         else{
             if(haveTheUserReachTheEndOfTheRoute())
-                textPercent.setText("100%");
+                textPercent.setText(R.string.textPercent_when_route_complete);
             else{
-                int progress = (int)((User.distanceDone(routeIndex) / route.totalLengthOfTheRoute()) * 100);
-                textPercent.setText(Integer.toString(progress) + "%");
+                int progress = (int)(
+                        (User.distanceDone(routeIndex) / route.totalLengthOfTheRoute()) * 100
+                );
+
+                textPercent.setText(
+                        String.format(
+                                "%s%%",
+                                Integer.toString(progress)
+                        )
+                );
             }
 
-            textDistance.setText(Integer.toString((int) User.distanceDone(routeIndex)) + " m");
-            textSteps.setText(Integer.toString(User.getStepsDone().get(routeIndex)) + " steps");
+            textDistance.setText(
+                    String.format(
+                            "%s m",
+                            Integer.toString((int) User.distanceDone(routeIndex))
+                    )
+            );
+
+            textSteps.setText(
+                    String.format(
+                            "%s steps",
+                            Integer.toString(User.getStepsDone().get(routeIndex))
+                    )
+            );
 
             editText.setText("");
         }
@@ -188,40 +253,58 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     // UPDATE //
-    private void updateActivityByEditTextView(){
-
-        if(editText.getText().toString().equals(""))
-            route.update(0);
-        else
-            route.update(
-                    Integer.parseInt(editText.getText().toString())
-            );
+    private void updateActivity(){
+        route.update();
 
         updateUserMarkerAndUserPolyline();
 
         setTextViewsValues();
 
+        setCameraOnUser();
+
         showRouteCompleteDialogIfRouteIsComplete();
+    }
+    private void setCameraOnUser(){
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(User.getPosition(),10));
+    }
+
+    /**
+     * Function called when the Confirm button is clicked
+     * Change the User steps done on this route depending of the content of the EditText
+     */
+    private void updateActivityByEditTextView(){
+
+        if(editText.getText().toString().equals("")){
+            User.setStepsDone(0, routeIndex);
+        }
+        else
+            User.setStepsDone(
+                    Integer.parseInt(editText.getText().toString()),
+                    routeIndex
+            );
+
+        updateActivity();
+    }
+
+    /**
+     * Function called when the Increase button (+) is clicked
+     */
+    private void updateActivityByIncreaseButton(){
+        User.increaseCurrentStepsDoneAmount(routeIndex);
+
+        updateActivity();
+    }
+    /**
+     * Function called when the Decrease button (-) is clicked
+     */
+    private void updateActivityByDecreaseButton(){
+        User.decreaseCurrentStepsDoneAmount(routeIndex);
+
+        updateActivity();
     }
 
     private boolean haveTheUserReachTheEndOfTheRoute(){
         return User.distanceToStep(route.totalLengthOfTheRoute()) <= User.getStepsDone().get(routeIndex);
-    }
-    private void showRouteCompleteDialogIfRouteIsComplete(){
-        //If route is done
-        if(haveTheUserReachTheEndOfTheRoute()){
-
-            final AlertDialog endOfTheRoute = createRouteCompleteDialog();
-
-            endOfTheRoute.setOnShowListener(new DialogInterface.OnShowListener() {
-                @Override
-                public void onShow(DialogInterface dialog) {
-                    endOfTheRoute.getButton(DialogInterface.BUTTON_NEUTRAL).setTextColor(Color.DKGRAY);
-                }
-            });
-
-            endOfTheRoute.show();
-        }
     }
     private AlertDialog createRouteCompleteDialog(){
 
@@ -252,6 +335,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         return builder.create();
     }
+    private void showRouteCompleteDialogIfRouteIsComplete(){
+        //If route is complete
+        if(haveTheUserReachTheEndOfTheRoute()){
+
+            final AlertDialog endOfTheRoute = createRouteCompleteDialog();
+
+            endOfTheRoute.setOnShowListener(new DialogInterface.OnShowListener() {
+                @Override
+                public void onShow(DialogInterface dialog) {
+                    endOfTheRoute.getButton(DialogInterface.BUTTON_NEUTRAL).setTextColor(Color.DKGRAY);
+                }
+            });
+
+            endOfTheRoute.show();
+        }
+    }
 
     // DRAWERS //
     private void displayRouteAndUser(){
@@ -275,7 +374,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // User Stuff //
         drawUserMarkerAndUserPolyline();
+
+        // Handle the graphical problem //
+        graphicalProblemHandler();
     }
+
     private void drawUserMarkerAndUserPolyline(){
         // User marker //
         userMarker =
@@ -293,7 +396,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         10
                 );
     }
-
     private void updateUserMarkerAndUserPolyline(){
         removeUserMarkerAndUserPolyline();
 
@@ -304,6 +406,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         userPolyline.remove();
     }
 
+    /**
+     * Draw and return a Google Map's Marker
+     * Keep the Marker in a variable will allow us to remove it later (for update)
+     */
     private Marker drawMarker(LatLng position, String title, BitmapDescriptor icon){
 
         return mMap.addMarker(
@@ -314,6 +420,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         );
 
     }
+    /**
+     * Draw and return a Google Map's Polyline
+     * Keep the Polyline in a variable will allow us to remove it later (for update)
+     */
     private Polyline drawPolyline(ArrayList<LatLng> wayPointsList, int color, int width){
 
         return mMap.addPolyline(
@@ -327,8 +437,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     //PROBLEM HANDLER
     /**
-     * There was a graphical problem when you display the routes
-     * The problem is that when you open a route, it seem to first display it using the amount of steps made by the user on the route index = 0
+     * There is a graphical problem when you display the routes
+     * The problem is that when you open a route, it seem to first display it using the amount of steps made by the user on the route of index = 0
      * I've checked if the right index value was passing through the activities and yes because the TextViews are displaying the correct data
      * Then I've checked if I made mistake on the drawing functions, but here again nothing seems wrong
      * On top of that when you update the route with the 'UPDATE' button that display the right stuff, so that definitely don't come from the drawing functions
@@ -338,13 +448,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     private void graphicalProblemHandler(){
 
-        route.update(User.getStepsDone().get(routeIndex));
+        User.setStepsDone(User.getStepsDone().get(routeIndex), routeIndex);
 
-        updateUserMarkerAndUserPolyline();
+        route.update();
 
-        setTextViewsValues();
-
-        showRouteCompleteDialogIfRouteIsComplete();
+        updateActivity();
     }
 
     // CHANGE OF ACTIVITY //
