@@ -59,20 +59,4 @@ public class User {
         return (int)(distance / ((heightInCentimeters/100) * 0.414));
     }
 
-    /**
-     * Increase the amount of steps done by 1
-     * @param index is the index of the route concerned by the change
-     */
-    public static void increaseCurrentStepsDoneAmount(int index){
-        stepsDone.set(index, stepsDone.get(index) + 1);
-    }
-
-    /**
-     * Decrease the amount of steps done by 1
-     * @param index is the index of the route concerned by the change
-     */
-    public static void decreaseCurrentStepsDoneAmount(int index){
-        stepsDone.set(index, stepsDone.get(index) - 1);
-    }
-
 }

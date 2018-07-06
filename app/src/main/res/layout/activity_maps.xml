@@ -62,102 +62,28 @@
             android:background="@color/colorPrimary"
             >
 
-            <EditText
-                android:id="@+id/editNewStepAmount"
-
-                android:layout_width="80dp"
-                android:layout_height="25dp"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="145dp"
-
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-
-                android:inputType="number"
-
-                android:hint="@string/hint_for_edit_text"
-
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
-
-                android:background="@color/colorPrimaryDark"
-            />
-
-            <Button
-                android:id="@+id/confirmNewStepAmount"
-
-                android:layout_width="60dp"
-                android:layout_height="25dp"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="80dp"
-
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-
-                android:background="@color/colorAccent"
-
-                android:text="@string/update_button_text"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
-            />
-
-            <Button
-                android:id="@+id/increaseStepAmountButton"
-
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="40dp"
-
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-
-                android:background="@color/colorAccent"
-
-                android:text="@string/text_increase_step_amount_button"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
-            />
-
-            <Button
-                android:id="@+id/decreaseStepAmountButton"
-
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-
-                android:background="@color/colorAccent"
-
-                android:text="@string/text_decrease_step_amount_button"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
-            />
-
             <TextView
                 android:id="@+id/textRouteTotalLength"
 
-                android:layout_width="70dp"
-                android:layout_height="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
 
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="50dp"
                 android:layout_marginStart="10dp"
 
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
 
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+                android:textSize="17sp"
             />
 
             <TextView
                 android:id="@+id/textRouteTotalSteps"
 
-                android:layout_width="90dp"
-                android:layout_height="20dp"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
 
                 android:layout_marginBottom="10dp"
                 android:layout_marginStart="10dp"
@@ -166,31 +92,33 @@
                 android:layout_alignParentStart="true"
 
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
+
+                android:textSize="17sp"
             />
 
             <TextView
                 android:id="@+id/textDistance"
 
-                android:layout_width="70dp"
-                android:layout_height="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
 
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="50dp"
                 android:layout_marginEnd="10dp"
 
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
 
-
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
 
                 android:textAlignment="textEnd"
+                android:textSize="17sp"
             />
 
             <TextView
                 android:id="@+id/textSteps"
 
-                android:layout_width="90dp"
-                android:layout_height="20dp"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
 
                 android:layout_marginBottom="10dp"
                 android:layout_marginEnd="10dp"
@@ -201,6 +129,7 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
 
                 android:textAlignment="textEnd"
+                android:textSize="17sp"
             />
         </RelativeLayout>
 

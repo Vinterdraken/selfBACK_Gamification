@@ -15,8 +15,6 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -40,9 +38,6 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
-import static java.text.DateFormat.getDateInstance;
-import static java.text.DateFormat.getTimeInstance;
-
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
@@ -57,9 +52,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private TextView textPercent;
     private TextView textDistance;
     private TextView textSteps;
-    private EditText editText;
-
-    private int stepCounter;
 
     ///////////////
     // FUNCTIONS //
@@ -179,41 +171,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 )
         );
 
-        // new steps done amount
-        editText = findViewById(R.id.editNewStepAmount);
-
-        // Confirm (change of steps done amount) Button
-        Button confirmButton = findViewById(R.id.confirmNewStepAmount);
-        confirmButton.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        updateActivityByEditTextView();
-                    }
-                }
-        );
-
-        //Increase Button
-        Button increaseButton = findViewById(R.id.increaseStepAmountButton);
-        increaseButton.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        updateActivityByIncreaseButton();
-                    }
-        });
-
-        //Decrease Button
-        Button decreaseButton = findViewById(R.id.decreaseStepAmountButton);
-        decreaseButton.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        updateActivityByDecreaseButton();
-                    }
-                }
-        );
-
         // Back to the list button (right hand up corner)
         ImageButton imageButton = findViewById(R.id.back);
         imageButton.setOnClickListener(
@@ -259,8 +216,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             Integer.toString(User.getStepsDone().get(routeIndex))
                     )
             );
-
-            editText.setText("");
         }
     }
 
@@ -289,40 +244,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         else
             //default zoom value
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(User.getPosition(), 10));
-    }
-
-    /**
-     * Function called when the Confirm button is clicked
-     * Change the User steps done on this route depending of the content of the EditText
-     */
-    private void updateActivityByEditTextView(){
-
-        if(editText.getText().toString().equals(""))
-            User.getStepsDone().set(routeIndex, 0);
-        else
-            User.getStepsDone().set(
-                    routeIndex,
-                    Integer.parseInt(editText.getText().toString())
-            );
-
-        updateActivity();
-    }
-
-    /**
-     * Function called when the Increase button (+) is clicked
-     */
-    private void updateActivityByIncreaseButton(){
-        User.increaseCurrentStepsDoneAmount(routeIndex);
-
-        updateActivity();
-    }
-    /**
-     * Function called when the Decrease button (-) is clicked
-     */
-    private void updateActivityByDecreaseButton(){
-        User.decreaseCurrentStepsDoneAmount(routeIndex);
-
-        updateActivity();
     }
 
     private boolean haveTheUserReachTheEndOfTheRoute(){
@@ -554,107 +475,3 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 }
-
-/*
-    //SUB CLASS TO GET AN REAL TIME UPDATE OF STEP FROM THE DATABASE //
-    private class StepUpdater {
-
-        private static final int REQUEST_OAUTH_REQUEST_CODE = 1;
-        private static final String TAG = "Daily Total Steps ";
-
-        private Context mContext;
-
-        private int routeIndex;
-        private int gDailyStepCount = 0;
-
-        // CONSTRUCTOR //
-        private StepUpdater(int routeIndex, Context context){
-            io.realm.Realm.init(context);
-
-            this.routeIndex = routeIndex;
-            mContext = context;
-
-            FitnessOptions fitnessOptions = createFitnessOptionsToReadStepCountDelta();
-            checkPermissions(fitnessOptions);
-        }
-
-        @Override
-        protected void onActivityResult(int requestCode, int resultCode, Intent data){
-            if (resultCode == android.app.Activity.RESULT_OK) {
-                if (requestCode == REQUEST_OAUTH_REQUEST_CODE) {
-                    getDailyTotalSteps();
-                }
-            }
-
-        }
-
-        // FUNCTIONS //
-        private FitnessOptions createFitnessOptionsToReadStepCountDelta(){
-            return FitnessOptions.builder()
-                    .addDataType(DataType.TYPE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
-                    .addDataType(DataType.AGGREGATE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
-                    .build();
-        }
-        private void checkPermissions(FitnessOptions fitnessOptions){
-            if (!GoogleSignIn.hasPermissions(
-                    GoogleSignIn.getLastSignedInAccount(mContext), fitnessOptions)
-                    ) {
-
-                GoogleSignIn.requestPermissions(
-                        MapsActivity.this,
-                        REQUEST_OAUTH_REQUEST_CODE,
-                        GoogleSignIn.getLastSignedInAccount(mContext),
-                        fitnessOptions
-                );
-            }
-            else{
-                getDailyTotalSteps();
-            }
-        }
-
-        private Task getDailyTotalSteps() {
-
-            return
-            Fitness.getHistoryClient(
-                MapsActivity.this,
-                GoogleSignIn.getAccountForScopes(
-                    mContext,
-                    new Scope(Scopes.FITNESS_ACTIVITY_READ)
-                )
-            )
-            .readDailyTotal(DataType.TYPE_STEP_COUNT_DELTA)
-            .addOnSuccessListener(
-                new OnSuccessListener<DataSet>() {
-                    @Override
-                    public void onSuccess(DataSet DataSet) {
-                       dumpDataSet(DataSet);
-                    }
-                }
-            )
-            .addOnFailureListener(
-                new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.e("READ", "Failed to read data");
-                    }
-                }
-            );
-        }
-
-        private void dumpDataSet(DataSet dataSet){
-            Log.e(TAG, "Data returned for Data type: " + dataSet.getDataType().getName());
-            DateFormat dateFormat = getTimeInstance();
-
-            for (DataPoint dp : dataSet.getDataPoints()) {
-                Log.e(TAG, "Data point:");
-                Log.e(TAG, "\tType: " + dp.getDataType().getName());
-                Log.e(TAG, "\tStart: " + dateFormat.format(dp.getStartTime(TimeUnit.MILLISECONDS)));
-                Log.e(TAG, "\tEnd: " + dateFormat.format(dp.getEndTime(TimeUnit.MILLISECONDS)));
-
-                for (Field field : dp.getDataType().getFields()) {
-                    Log.e(TAG, "\tField: " + field.getName() + " Value: " + dp.getValue(field));
-                }
-            }
-        }
-    }
-*/
