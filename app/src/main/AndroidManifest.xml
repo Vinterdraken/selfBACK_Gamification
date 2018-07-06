@@ -28,7 +28,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".activities.RoutesListActivity"
+            android:name=".map_gamification.activities.RoutesListActivity"
             android:label="@string/title_activity_routeList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
         </activity>
 
         <activity
-            android:name=".activities.MapsActivity"
+            android:name=".map_gamification.activities.MapsActivity"
             android:label="@string/title_activity_maps">
         </activity>
 
